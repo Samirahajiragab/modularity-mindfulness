@@ -20,19 +20,8 @@ html {
 
 body{
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   background-color: #fff;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: .5rem;
-  grid-template-areas:
-    "header header"
-    "main";
-}
-
-header {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
 }
 
 .logo, .logo-text{
@@ -70,8 +59,38 @@ h2 {
   text-align: center;
 }
 
-p {
+.banner-dis {
   border-bottom: 5px solid #e2e2e2;
   padding-bottom: 1rem;
-  font-size: 1.2rem;
+}
+
+.text, .text-def {
+  display: block;
+  font-style: normal;
+}
+
+.btn {
+  display: block;
+  padding: .5em 1em .6em;
+  max-width: 30em;
+
+  background-color: #fff;
+  border-radius: .3rem;
+  border: .2rem solid #3783a3;
+
+  color: #3783a3;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-top: 5px solid #e2e2e2;
 }
