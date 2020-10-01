@@ -32,11 +32,6 @@ body {
   grid-gap: .5rem;
 }
 
-.banner {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-}
-
 .logo, .logo-text {
   display: block;
   text-align: center;
