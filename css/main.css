@@ -35,6 +35,7 @@ body {
 .logo, .logo-text {
   display: block;
   text-align: center;
+  align-items: center;
   font-style: normal;
 }
 
