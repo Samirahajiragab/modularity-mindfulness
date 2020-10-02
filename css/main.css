@@ -6,9 +6,9 @@
 
 html {
   box-sizing: border-box;
-  font-family: Georgia, serif;
+  font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
-  font-size: .8rem;
+  font-size: 1rem;
 
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -27,61 +27,97 @@ body {
   padding: 1rem;
   background-color: #fff;
   font-family: "Noto Sans JP", sans-serif;
+  grid-template-areas:
+    "header"
+    "main main";
 }
 
 article {
-  display: contents;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
   margin: 0 0 1.5rem;
 }
 
+.bottom {
+  grid-column: 3;
+  grid-row: 1;
+}
+
 .logo, .logo-text {
+  font-size: 1.1rem;
   display: block;
   text-align: center;
-  justify-content: space-between;
   font-style: normal;
+  margin: 0;
+}
+
+.logo {
+  font-size: 2rem;
 }
 
 h1 {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 ul {
   list-style: none;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
   display: flex;
-  margin-top: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
 }
 
 a {
   text-align: center;
   color: #3783a3;
-  padding: 1rem;
 }
 
 .img-flex {
   width: 100%;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: .5rem;
-  border-top: 5px solid #e2e2e2;
+  font-size: 2rem;
+  margin-top: 1.1rem;
+  margin-bottom: .6rem;
 }
 
 .banner {
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top: 3px solid #e2e2e2;
+  border-bottom: 3px solid #e2e2e2;
   text-align: center;
 }
 
 .banner-dis {
-  border-bottom: 5px solid #e2e2e2;
-  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.img-flexs {
+  width: 100%;
+  margin-top: 1.3rem;
 }
 
 .text, .text-def {
   display: block;
   font-style: normal;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+.text-def {
+  font-size: 1rem;
 }
 
 .btn {
@@ -127,16 +163,47 @@ footer {
   }
 
   ul {
-    margin-top: 2rem;
+    font-size: 1.1rem;
     display: flex;
+    margin-top: 1.2rem;
+    padding: 0;
   }
+
   .nav {
     float: right;
+  }
+
+  a {
+    padding-left: 1rem;
   }
 
   .btn {
     text-align: left;
   }
+
+  h2 {
+    margin-top: 2rem;
+    max-width: 28rem;
+    font-size: 1.9rem;
+    font-weight: normal;
+  }
+
+  .imag-flex {
+    margin-bottom: 2rem;
+  }
+
+  .banner-dis {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .text-def {
+    font-size: 1rem;
+  }
+
 
 
 }
